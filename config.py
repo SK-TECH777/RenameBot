@@ -26,20 +26,20 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "21655449")
-    API_HASH  = os.environ.get("API_HASH", "112be9974e163f6dbd645ce4b94f4e6a")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6782811930:AAFDqkELEVJeGGlTbI5tavrac7RfZ7-Qzw4") 
+    API_ID    = os.environ.get("API_ID", "22128383")
+    API_HASH  = os.environ.get("API_HASH", "7992b5c5c9c6d34276c3dce9e46ba879")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8590192333:AAGWGxOJJf0rzqyiR8rLjVoqjPro9nh9PXQ") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","Cluster0")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://sktech007:sktech007@cluster0.utm4vj5.mongodb.net/?appName=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1229852181').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "team_netflix") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
+    START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/2ee7479c14e9a5631c51c-af02092ed32ee3d1ef.jpg")
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5960133511').split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "0") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002348263944"))
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
